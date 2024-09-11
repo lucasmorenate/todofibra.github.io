@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Fibra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    @media (max-width: 1400px) {
+
+        .sidebar,
+        .content {
+            flex: 100%;
+            height: 2000px;
+            /* Para crear un desplazamiento */
+            background-color: lightgrey;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(to right, #87CEEB, #0000FF);
+
+
+        }
+
+        .nav-link {
+            font: lightgrey;
+        }
+
+        .parrafo-gris {
+            background-color: rgba(231, 231, 231, 0.623);
+            padding: 1% 10%;
+            margin-top: 10px;
+
+        }
+
+        .parrafo-blanco {
+            background-color: rgb(255, 255, 255);
+            padding: 1% 10%;
+            margin-top: 10px;
+        }
+
+        .body {
+            background: linear-gradient(to right, #87CEEB, #0000FF);
+            padding: 10px 30px;
+        }
+
+        img {
+            width: 300px;
+            height: 250px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-container {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .card {
+            margin: 10px;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            /* Verde WhatsApp */
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow:
+                2px 2px 3px #999;
+        }
+
+        .whatsapp-button img {
+            width: 50px;
+            /* Ajuste de tamaño del ícono */
+            height: 50px;
+            /* Ajuste de tamaño del ícono */
+            border-radius: 50%;
+        }
+
+        .fab {
+            font-size: 24px;
+        }
+    }
+</style>
+
+<body>
+    <section class="sticky-element" style="color: white">
+        <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"></li>
+                <a class="nav-link active" style="color: white" aria-current="page" href="#Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white" aria-current="page" href="#1">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="#2">Qué Hacemos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="#3">Servicios y Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="#4">Proceso de Instalación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="#5">Galería de Proyectos
+                    </a>
+                </li>
+            </ul>
+
+    </section>
+    <div class="text-center" id="Inicio">
+        <img src="/imagenes/29496637_2122518117979215_7789518087216168960_n.jpg" class="rounded" alt="...">
+    </div>
+    <section id="1">
+        <div class="parrafo-gris">
+            <h2 class="text-center">Quiénes Somos</h2>
+            <p>En Piscinas de Ensueño, nos enorgullecemos de ser líderes en la industria de diseño e instalación de
+                piscinas desde hace más de dos décadas. Fundada en 2000 por un grupo de apasionados expertos en
+                arquitectura acuática, nuestra empresa ha crecido hasta convertirse en un referente nacional en la
+                creación de espacios acuáticos de lujo y confort.
+
+                Nuestra historia está marcada por la innovación constante y el compromiso inquebrantable con la calidad.
+                Comenzamos como una pequeña empresa local y, gracias a nuestra dedicación y excelencia en el servicio,
+                hemos expandido nuestra cobertura a nivel nacional, atendiendo a clientes en todas las principales
+                ciudades del país.
+
+                Lo que nos distingue es nuestra atención meticulosa a los detalles y nuestra capacidad para transformar
+                los sueños de nuestros clientes en realidades tangibles. Cada proyecto es una obra de arte única,
+                diseñada para complementar perfectamente el estilo de vida y el entorno de cada cliente. Con un equipo
+                de profesionales altamente capacitados y utilizando las últimas tecnologías en diseño y construcción de
+                piscinas, garantizamos resultados que superan las expectativas.</p>
+        </div>
+    </section>
+    <section class="parrafo-blanco" id="2">
+        <div>
+            <h2 class="text-center">Qué Hacemos</h2>
+            <p>En Piscinas de Ensueño, no solo construimos piscinas, creamos experiencias acuáticas únicas. Nuestro
+                equipo
+                de expertos se dedica a diseñar, construir y mantener piscinas de alta calidad que se adaptan
+                perfectamente
+                a tu estilo de vida y espacio. Desde piscinas familiares hasta complejos acuáticos de lujo, nuestro
+                compromiso es transformar tu visión en realidad, ofreciendo soluciones innovadoras y sostenibles que
+                añaden
+                valor a tu propiedad y mejoran tu calidad de vida.</p>
+        </div>
+    </section>
+    <section class="parrafo-gris" id="3" style="margin-top: 10px;">
+        <h2 class="text-center">Servicios y Productos</h2>
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Limpieza de Piscinas Gratis</h5>
+                        <p class="card-text">Ofrecemos servicio de limpieza gratuito durante el primer año tras la
+                            instalación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Instalaciones en 2 Meses</h5>
+                        <p class="card-text">Garantizamos la finalización de la instalación en un plazo máximo de 2
+                            meses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Instalación de Accesorios</h5>
+                        <p class="card-text">Instalamos una amplia gama de accesorios para personalizar tu piscina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Atención Personalizada</h5>
+                        <p class="card-text">Ofrecemos un servicio de atención al cliente personalizado y disponible
+                            24/7.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseños Personalizados</h5>
+                        <p class="card-text">Creamos diseños únicos adaptados a tus preferencias y espacio disponible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento Integral</h5>
+                        <p class="card-text">Ofrecemos servicios de mantenimiento integral para mantener tu piscina en
+                            perfecto estado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parrafo-blanco" id="4">
+        <div class="text-center">
+            <h2>Proceso de Instalación</h2>
+            <div>
+                <div class="justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="First group">  
+
+                        <button type="button"   class="btn btn-outline-secondary" data-target="content1">1</button>
+                        <button type="button" class="btn btn-outline-secondary" data-target="content2">2</button>
+                        <button type="button" class="btn btn-outline-secondary" data-target="content3">3</button>
+                        <button type="button" class="btn btn-outline-secondary" data-target="content4">4</button>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="content1" style="display: none;">
+                        <h2>Consulta Inicial</h2>
+                        <p>Realizamos una consulta detallada para entender tus necesidades y preferencias.</p>
+                    </div>
+                    <div id="content2" style="display: none;">
+                        <h2>Título 2</h2>
+                        <p>Contenido del párrafo 2.</p>
+                    </div>
+                    <div id="content3" style="display: none;">
+                        <h2>Título 3</h2>
+                        <p>Contenido del párrafo 3.</p>
+                    </div>
+                    <div id="content4" style="display: none;">
+                        <h2>Título 4</h2>
+                        <p>Contenido del párrafo 4.</p>
+                    </div>
+                </div>
+
+                <script>
+                    const buttons = document.querySelectorAll('.btn-group button');
+                    const contentDivs = document.querySelectorAll('#content div');
+
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const targetContentId = button.getAttribute('data-target');
+                            const targetContentDiv = document.getElementById(targetContentId);
+
+                            contentDivs.forEach(div => div.style.display = 'none');
+                            targetContentDiv.style.display = 'block';
+                        });
+                    });
+                </script>
+            </div>
+    </section>
+    <section id="5">
+        <div class="parrafo-gris">
+            <h2 class="text-center">Galería de Proyectos</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-container" src="/imagenes/IMG-20180304-WA0076.jpg" alt="Imagen 1"
+                            class="img-fluid">
+                        <h6 class="text-center">pileta 1</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-container" src="/imagenes/117964888_1047006285752924_81771014230102075_n.jpg"
+                            alt="Imagen 2" class="img-fluid">
+                        <h6 class="text-center">pileta 2</h6>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-container" src="/imagenes/images (9) (1).jpg" alt="Imagen 3" class="img-fluid">
+                        <h6 class="text-center">pileta 3</h6>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C8yYh19ZAtW5x7484jH+H+87l0b5IRyMQ4qnQzD/"   crossorigin="anonymous"></script>
+        </div>
+    </section>
+    <section class="parrafo-blanco" style="margin-top: 10px;">
+        <h2 class="text-center">Servicios Adicionales</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Climatización de Piscinas</h5>
+                        <p class="card-text">Sistemas de calefacción para disfrutar de tu piscina todo el año.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Iluminación LED</h5>
+                        <p class="card-text">Sistemas de iluminación LED personalizables para crear ambientes únicos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Instalación de Accesorios</h5>
+                        <p class="card-text">Instalamos una amplia gama de accesorios para personalizar tu piscina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Atención Personalizada</h5>
+                        <p class="card-text">Ofrecemos un servicio de atención al cliente personalizado y disponible
+                            24/7.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseños Personalizados</h5>
+                        <p class="card-text">Creamos diseños únicos adaptados a tus preferencias y espacio disponible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card shadow mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantenimiento Integral</h5>
+                        <p class="card-text">Ofrecemos servicios de mantenimiento integral para mantener tu piscina en
+                            perfecto estado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parrafo-gris">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Información de Contacto</h3>
+                    <p>
+                        <i class="bi bi-telephone-fill"></i> +1 234 567 890<br>
+                        <i class="bi bi-envelope-fill"></i> info@piscinasdeensueno.com<br>
+                        <i class="bi bi-geo-alt-fill"></i> 123 Calle Principal, Ciudad, País
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="enviar_mensaje.php" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                aria-describedby="nombreHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="https://wa.me/5493764825138" target="_blank" class="whatsapp-button">
+            <img src="/imagenes/social_15707820.png" class=".whatsapp-button img">
+        </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
